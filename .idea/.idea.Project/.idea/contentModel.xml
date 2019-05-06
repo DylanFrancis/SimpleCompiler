@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Dylan\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Dylan\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Project.-1872558577.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Dylan\Google Drive\Honours\WHWV401 Compiler Construction\Project" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Project" t="IncludeRecursive">
+        <e p="AST.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Parser.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Project.csproj" t="IncludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Scanner.cs" t="Include" />
+        <e p="Token.cs" t="Include" />
+      </e>
+      <e p="Project.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

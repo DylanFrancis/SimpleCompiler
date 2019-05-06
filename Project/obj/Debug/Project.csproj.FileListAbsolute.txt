@@ -1,0 +1,6 @@
+C:\Users\Dylan\Google Drive\Honours\WHWV401 Compiler Construction\Project\Project\bin\Debug\Project.exe
+C:\Users\Dylan\Google Drive\Honours\WHWV401 Compiler Construction\Project\Project\bin\Debug\Project.pdb
+C:\Users\Dylan\Google Drive\Honours\WHWV401 Compiler Construction\Project\Project\obj\Debug\Project.csprojAssemblyReference.cache
+C:\Users\Dylan\Google Drive\Honours\WHWV401 Compiler Construction\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Dylan\Google Drive\Honours\WHWV401 Compiler Construction\Project\Project\obj\Debug\Project.exe
+C:\Users\Dylan\Google Drive\Honours\WHWV401 Compiler Construction\Project\Project\obj\Debug\Project.pdb
