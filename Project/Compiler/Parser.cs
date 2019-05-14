@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Project {
     public class Parser {
@@ -17,8 +18,13 @@ namespace Project {
             Scanner S = new Scanner(Sentence);            
 
             TokenList = S.getTokens();
-            CurTokenPos = -1; FetchNextToken(); 
+            CurTokenPos = -1; 
+            FetchNextToken(); 
             Expression P = parseExpression();
+        }
+
+        public Parser(List<string> lines) {
+            
         }
 
         void FetchNextToken()
@@ -48,7 +54,7 @@ namespace Project {
         {
             Expression ExpAST;
             PrimaryExpression P1 = parsePrimary();
-            Operate O = parseOperator();
+            Operator O = parseOperator();
             PrimaryExpression P2 = parsePrimary();
             ExpAST = new Expression(P1, O, P2);
             return ExpAST; 
@@ -82,9 +88,9 @@ namespace Project {
             return I;
         }
 
-        Operate parseOperator()
+        Operator parseOperator()
         {
-            Operate O = new Operate(CurrentToken.getSpelling());
+            Operator O = new Operator(CurrentToken.getSpelling());
             accept(Operator);
             return O; 
         }

@@ -6,17 +6,35 @@
     <e p="C:\Users\Dylan\Google Drive\Honours\WHWV401 Compiler Construction\Project" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Project" t="IncludeRecursive">
-        <e p="AST.cs" t="Include" />
+        <e p="AbstractSyntaxTree" t="Include">
+          <e p="AST.cs" t="Include" />
+          <e p="Commands" t="Include">
+            <e p="Declaration.cs" t="Include" />
+            <e p="SequentialDeclaration.cs" t="Include" />
+          </e>
+          <e p="Expressions" t="Include">
+            <e p="BracketsPE.cs" t="Include" />
+            <e p="Expression.cs" t="Include" />
+            <e p="IdentifierPE.cs" t="Include" />
+          </e>
+          <e p="Terminals" t="Include">
+            <e p="Identifier.cs" t="Include" />
+            <e p="Operator.cs" t="Include" />
+            <e p="Terminal.cs" t="Include" />
+          </e>
+        </e>
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Compiler" t="Include">
+          <e p="Parser.cs" t="Include" />
+          <e p="Scanner.cs" t="Include" />
+          <e p="Token.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive" />
-        <e p="Parser.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Project.csproj" t="IncludeRecursive" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
-        <e p="Scanner.cs" t="Include" />
-        <e p="Token.cs" t="Include" />
       </e>
       <e p="Project.sln" t="IncludeFlat" />
     </e>
