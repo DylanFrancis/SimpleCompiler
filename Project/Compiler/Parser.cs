@@ -4,96 +4,86 @@ using System.Collections.Generic;
 
 namespace Project {
     public class Parser {
-        ArrayList TokenList;
-        Token CurrentToken;
-        int CurTokenPos;
+        private const int Identifier = 1;
+        private const int Operator = 2;
+        private const int LPar = 3;
+        private const int RPar = 4;
+        private Token CurrentToken;
+        private int CurTokenPos;
+        private readonly ArrayList TokenList;
 
-        const int Identifier = 1;
-        const int Operator = 2;
-        const int LPar = 3;
-        const int RPar = 4;
-
-        public Parser(String Sentence)
-        {
-            Scanner S = new Scanner(Sentence);            
+        public Parser(string Sentence) {
+            var S = new Scanner(Sentence);
 
             TokenList = S.getTokens();
-            CurTokenPos = -1; 
-            FetchNextToken(); 
-            Expression P = parseExpression();
+            CurTokenPos = -1;
+            FetchNextToken();
+            var P = parseExpression();
         }
 
-        public Parser(List<string> lines) {
-            
-        }
+        public Parser(List<string> lines) { }
 
-        void FetchNextToken()
-        {
+        private void FetchNextToken() {
             CurTokenPos++;
             if (CurTokenPos < TokenList.Count)
-                CurrentToken = (Token)TokenList[CurTokenPos];
+                CurrentToken = (Token) TokenList[CurTokenPos];
             else
-                CurrentToken = null;            
+                CurrentToken = null;
         }
 
-        void accept(int Type)
-        {
+        private void accept(int Type) {
             if (CurrentToken.matchesType(Type))
                 FetchNextToken();
             else
-                Console.WriteLine("Syntax Error in accept");           
-           
+                Console.WriteLine("Syntax Error in accept");
         }
 
-        void acceptIt()
-        {            
-            FetchNextToken();           
+        private void acceptIt() {
+            FetchNextToken();
         }
 
-        Expression parseExpression()
-        {
+        private Expression parseExpression() {
             Expression ExpAST;
-            PrimaryExpression P1 = parsePrimary();
-            Operator O = parseOperator();
-            PrimaryExpression P2 = parsePrimary();
+            var P1 = parsePrimary();
+            var O = parseOperator();
+            var P2 = parsePrimary();
             ExpAST = new Expression(P1, O, P2);
-            return ExpAST; 
+            return ExpAST;
         }
 
-        PrimaryExpression parsePrimary()
-        {
+        private PrimaryExpression parsePrimary() {
             PrimaryExpression PE;
             if (CurrentToken == null)
                 return null;
-            switch (CurrentToken.getType())
-            {
-                case Identifier: Identifier I = parseIdentifier();
-                                 PE = new IdentifierPE(I);
-                                 break;
-                case LPar: acceptIt();
-                           PE = new BracketsPE(parseExpression());
-                           accept(RPar);
-                           break;
-                default: Console.WriteLine("Syntax Error in Primary");
-                           PE = null;
-                         break; 
+            switch (CurrentToken.getType()) {
+                case Identifier:
+                    var I = parseIdentifier();
+                    PE = new IdentifierPE(I);
+                    break;
+                case LPar:
+                    acceptIt();
+                    PE = new BracketsPE(parseExpression());
+                    accept(RPar);
+                    break;
+                default:
+                    Console.WriteLine("Syntax Error in Primary");
+                    PE = null;
+                    break;
             }
+
             return PE;
         }
 
-        Identifier parseIdentifier()
-        {
-            Identifier I = new Identifier(CurrentToken.getSpelling());
+        private Identifier parseIdentifier() {
+            var I = new Identifier(CurrentToken.getSpelling());
             accept(Identifier);
             return I;
         }
 
-        Operator parseOperator()
-        {
-            Operator O = new Operator(CurrentToken.getSpelling());
+        private Operator parseOperator() {
+            var O = new Operator(CurrentToken.getSpelling());
             accept(Operator);
-            return O; 
+            return O;
         }
-
     }
 }

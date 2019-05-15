@@ -1,10 +1,5 @@
-using System;
-
 namespace Project {
-    public class Operator : Terminal
-    {
-        public Operator(String Spelling) : base(Spelling)
-        {
-        }
+    public class Operator : Terminal {
+        public Operator(string Spelling) : base(Spelling) { }
     }
 }

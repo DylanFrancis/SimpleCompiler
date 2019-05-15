@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Dylan\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Dylan\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Project.-1872558577.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Dylan\Google Drive\Honours\WHWV401 Compiler Construction\Project" t="IncludeFlat">
+    <e p="C:\Users\s215008243\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\s215008243\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Project.-1400290622.00" t="ExcludeRecursive" />
+    <e p="C:\Users\s215008243\Documents\GitHub\Project" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Project" t="IncludeRecursive">
         <e p="AbstractSyntaxTree" t="Include">
           <e p="AST.cs" t="Include" />
           <e p="Commands" t="Include">
             <e p="Declaration.cs" t="Include" />
+            <e p="In.cs" t="Include" />
+            <e p="Let.cs" t="Include" />
             <e p="SequentialDeclaration.cs" t="Include" />
           </e>
           <e p="Expressions" t="Include">

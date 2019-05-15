@@ -1,12 +1,8 @@
-using System;
-
 namespace Project {
-    public class Terminal : AST
-    {
-        String Spelling;
+    public class Terminal : AST {
+        private string Spelling;
 
-        public Terminal(String Spelling)
-        {
+        public Terminal(string Spelling) {
             this.Spelling = Spelling;
         }
     }

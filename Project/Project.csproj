@@ -40,6 +40,8 @@
     <ItemGroup>
         <Compile Include="AbstractSyntaxTree\AST.cs" />
         <Compile Include="AbstractSyntaxTree\Commands\Declaration.cs" />
+        <Compile Include="AbstractSyntaxTree\Commands\In.cs" />
+        <Compile Include="AbstractSyntaxTree\Commands\Let.cs" />
         <Compile Include="AbstractSyntaxTree\Commands\SequentialDeclaration.cs" />
         <Compile Include="AbstractSyntaxTree\Expressions\BracketsPE.cs" />
         <Compile Include="AbstractSyntaxTree\Expressions\Expression.cs" />

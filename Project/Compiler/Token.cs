@@ -2,39 +2,32 @@ using System;
 
 namespace Project {
     public class Token {
-        
-        String Spelling;
-        int Type;        // 1 - Identifier, 2 Operator, 3 LPar, 4 RPar
-        
-        public Token(String S, int T)
-        {
+        private readonly string Spelling;
+        private readonly int Type; // 1 - Identifier, 2 Operator, 3 LPar, 4 RPar
+
+        public Token(string S, int T) {
             Spelling = S;
             Type = T;
         }
 
-        public String getSpelling()
-        {
+        public string getSpelling() {
             return Spelling;
         }
 
-        public int getType()
-        {
+        public int getType() {
             return Type;
         }
 
-        public void showSpelling()
-        {
+        public void showSpelling() {
             Console.WriteLine(Spelling);
         }
 
-        public Boolean matches(String other)
-        {
-            return (this.Spelling.Equals(other));
+        public bool matches(string other) {
+            return Spelling.Equals(other);
         }
 
-        public Boolean matchesType(int T)
-        {
-            return (Type == T);
+        public bool matchesType(int T) {
+            return Type == T;
         }
     }
 }
