@@ -41,6 +41,7 @@
     <Compile Include="AbstractSyntaxTree\AST.cs" />
     <Compile Include="AbstractSyntaxTree\NonTerminals\AssignCommand.cs" />
     <Compile Include="AbstractSyntaxTree\NonTerminals\BracketsPE.cs" />
+    <Compile Include="AbstractSyntaxTree\NonTerminals\DeclarationCommand.cs" />
     <Compile Include="AbstractSyntaxTree\NonTerminals\Expression.cs" />
     <Compile Include="AbstractSyntaxTree\NonTerminals\IfCommand.cs" />
     <Compile Include="AbstractSyntaxTree\NonTerminals\LetCommand.cs" />
@@ -54,9 +55,6 @@
     <Compile Include="Compiler\Token.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AbstractSyntaxTree\Expressions" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

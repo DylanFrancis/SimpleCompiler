@@ -4,15 +4,15 @@ using System.Collections.Generic;
 namespace Project {
     internal class Program {
         public static void Main(string[] args) {
-            Console.WriteLine("Textfile(T) or console(C)?");
-            LinkedList<string> lines;
-            var op = Console.ReadLine();
-            if (op == "T") lines = textfileInput();
-            else lines = consoleInput();
+//            Console.WriteLine("Textfile(T) or console(C)?");
+//            LinkedList<string> lines;
+//            var op = Console.ReadLine();
+//            if (op == "T") lines = textfileInput();
+//            else lines = consoleInput();
 
 
-//            Parser P = new Parser("a - ( b * c )");
-//            Console.ReadLine();
+            Parser P = new Parser("a - ( b * c )");
+            Console.ReadLine();
         }
 
         private static LinkedList<string> textfileInput() {

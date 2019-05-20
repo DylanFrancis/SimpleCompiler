@@ -35,20 +35,21 @@ namespace Project {
 
         private int FindType(string Spelling) {
             switch (Spelling) {
-                case "(": return LPar;
-                case ")": return RPar;
+                case "(":     return _lPar;
+                case ")":     return _rPar;
                 case "+":
                 case "-":
                 case "*":
-                case "/": return Operator;
-                case "Let": return Let;
-                case "var": 
-                case ":":
-                case "in":
-                case "if":
-                case "then":
-                case "else":
-                default: return Identifier;
+                case "/":     return _operator;
+                case "Let":   return _let;
+                case "if":    return _if;
+                case "var":   return _var;
+                case ":":     return _colon;
+                case "in":    return _in;
+                case "then":  return _then;
+                case "else":  return _else;
+                case ":=":    return _assign;
+                default:      return _identifier;
             }
         }
 

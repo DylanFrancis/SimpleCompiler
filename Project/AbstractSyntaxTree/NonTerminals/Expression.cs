@@ -1,5 +1,5 @@
 namespace Project {
-    public class Expression : AST {
+    public class Expression : Command {
         public Operator O;
         public PrimaryExpression P1;
         public PrimaryExpression P2;

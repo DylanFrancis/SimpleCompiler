@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5ff2269-e151-4c40-a594-f1811ba42ae0" name="Default Changelist" comment="" />
+    <list default="true" id="b5ff2269-e151-4c40-a594-f1811ba42ae0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/AbstractSyntaxTree/AST.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/AbstractSyntaxTree/AST.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/AssignCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/AssignCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Expression.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Expression.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/IfCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/IfCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/LetCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/LetCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Compiler/Compiler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Compiler/Compiler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Compiler/Parser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Compiler/Parser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Compiler/Scanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Compiler/Scanner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Project.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Project.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/bin/Debug/Project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Project/bin/Debug/Project.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/bin/Debug/Project.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/bin/Debug/Project.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/obj/Debug/Project.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Project/obj/Debug/Project.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/obj/Debug/Project.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Project/obj/Debug/Project.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/obj/Debug/Project.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/obj/Debug/Project.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,13 +28,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/AST.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project/Compiler/Parser.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="418">
+              <caret line="161" column="45" lean-forward="true" selection-start-line="161" selection-start-column="45" selection-end-line="161" selection-end-column="45" />
               <folding>
-                <marker date="1558184253690" expanded="true" signature="18:126" ph="{...}" />
+                <marker date="1558365798746" expanded="false" signature="6:148" ph="..." />
+                <marker date="1558365798746" expanded="true" signature="168:6118" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="204:6116" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="379:600" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="688:1284" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="805:1247" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="946:1026" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="1115:1187" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="1340:2232" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="1390:2128" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="1622:1751" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="1844:2016" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="2273:2882" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="2334:2847" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="2424:2801" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="2920:3607" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="3111:3547" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="3329:3533" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="3653:4066" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="3835:4030" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="4132:4334" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="4374:4545" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="4555:4682" ph="/* Sets CurrentToken to next token or null if last token is complete. ... */" />
+                <marker date="1558365798746" expanded="true" signature="4715:4756" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="4803:5032" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="5083:5764" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="5230:5730" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="5811:5941" ph="{...}" />
+                <marker date="1558365798746" expanded="true" signature="5984:6110" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/Compiler/Scanner.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="746">
+              <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+              <folding>
+                <marker date="1558364942238" expanded="true" signature="45:1985" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="82:1983" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="253:344" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="382:507" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="546:587" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="629:913" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="785:876" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="961:1631" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="993:1621" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="1671:1977" ph="{...}" />
+                <marker date="1558364942238" expanded="true" signature="1751:1967" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -25,25 +93,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/IfCommand.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="209">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding>
-                <marker date="1558184253628" expanded="true" signature="59:225" ph="{...}" />
-                <marker date="1558184253628" expanded="true" signature="98:223" ph="{...}" />
+                <marker date="1558362680995" expanded="true" signature="59:921" ph="{...}" />
+                <marker date="1558362680995" expanded="true" signature="98:919" ph="{...}" />
+                <marker date="1558362680995" expanded="true" signature="267:320" ph="{...}" />
+                <marker date="1558362680995" expanded="true" signature="412:553" ph="{...}" />
+                <marker date="1558362680995" expanded="true" signature="592:673" ph="{...}" />
+                <marker date="1558362680995" expanded="true" signature="710:793" ph="{...}" />
+                <marker date="1558362680995" expanded="true" signature="830:913" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/LetCommand.cs">
+        <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/DeclarationCommand.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="209">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
               <folding>
-                <marker date="1558184761943" expanded="true" signature="6:87" ph="..." />
-                <marker date="1558184761943" expanded="true" signature="119:292" ph="{...}" />
-                <marker date="1558184761943" expanded="true" signature="160:290" ph="{...}" />
+                <marker date="1558361796329" expanded="true" signature="50:548" ph="{...}" />
+                <marker date="1558361796329" expanded="true" signature="98:546" ph="{...}" />
+                <marker date="1558361796329" expanded="true" signature="239:322" ph="{...}" />
+                <marker date="1558361796329" expanded="true" signature="381:434" ph="{...}" />
+                <marker date="1558361796329" expanded="true" signature="471:540" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -52,38 +127,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/AssignCommand.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="95">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding>
-                <marker date="1558184311694" expanded="true" signature="59:192" ph="{...}" />
-                <marker date="1558184311694" expanded="true" signature="103:190" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Identifier.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-              <folding>
-                <marker date="1558093278290" expanded="true" signature="18:132" ph="{...}" />
-                <marker date="1558093278290" expanded="true" signature="59:130" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Expression.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="83" selection-start-line="6" selection-start-column="83" selection-end-line="6" selection-end-column="83" />
-              <folding>
-                <marker date="1558093278084" expanded="true" signature="18:335" ph="{...}" />
-                <marker date="1558093278084" expanded="true" signature="54:333" ph="{...}" />
-                <marker date="1558093278084" expanded="true" signature="240:327" ph="{...}" />
+                <marker date="1558364672351" expanded="true" signature="59:642" ph="{...}" />
+                <marker date="1558364672351" expanded="true" signature="103:640" ph="{...}" />
+                <marker date="1558364672351" expanded="true" signature="259:354" ph="{...}" />
+                <marker date="1558364672351" expanded="true" signature="408:461" ph="{...}" />
+                <marker date="1558364672351" expanded="true" signature="553:634" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -95,23 +146,53 @@
             <state>
               <caret column="19" selection-start-column="19" selection-end-column="19" />
               <folding>
-                <marker date="1558093278293" expanded="true" signature="18:186" ph="{...}" />
-                <marker date="1558093278293" expanded="true" signature="52:184" ph="{...}" />
-                <marker date="1558093278293" expanded="true" signature="129:178" ph="{...}" />
+                <marker date="1558358279693" expanded="true" signature="18:186" ph="{...}" />
+                <marker date="1558358279693" expanded="true" signature="52:184" ph="{...}" />
+                <marker date="1558358279693" expanded="true" signature="129:178" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/BracketsPE.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Identifier.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            <state>
+              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
               <folding>
-                <marker date="1558093278082" expanded="true" signature="18:184" ph="{...}" />
-                <marker date="1558093278082" expanded="true" signature="68:182" ph="{...}" />
-                <marker date="1558093278082" expanded="true" signature="141:176" ph="{...}" />
+                <marker date="1558358279688" expanded="true" signature="18:132" ph="{...}" />
+                <marker date="1558358279688" expanded="true" signature="59:130" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Expression.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+              <folding>
+                <marker date="1558359053617" expanded="true" signature="18:339" ph="{...}" />
+                <marker date="1558359053617" expanded="true" signature="58:337" ph="{...}" />
+                <marker date="1558359053617" expanded="true" signature="244:331" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/LetCommand.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding>
+                <marker date="1558361946084" expanded="false" signature="6:134" ph="..." />
+                <marker date="1558361946084" expanded="true" signature="166:774" ph="{...}" />
+                <marker date="1558361946084" expanded="true" signature="207:772" ph="{...}" />
+                <marker date="1558361946084" expanded="true" signature="363:507" ph="{...}" />
+                <marker date="1558361946084" expanded="true" signature="583:657" ph="{...}" />
+                <marker date="1558361946084" expanded="true" signature="707:766" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -119,25 +200,32 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>assign</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/DeclarationCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/AST.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Identifier.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Operator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Terminal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/BracketsPE.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Project/Compiler/Compiler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project/Compiler/Scanner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Expression.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/IdentifierPE.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Project/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/LetCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project/Compiler/Token.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/AssignCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/IfCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/LetCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project/Compiler/Compiler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Operator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Identifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Terminal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/IdentifierPE.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Project/Compiler/Parser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Project/Compiler/Token.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Project/Compiler/Scanner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Project/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -145,7 +233,6 @@
         <option value="$PROJECT_DIR$/Project/Token.cs" />
         <option value="$PROJECT_DIR$/Project/AST.cs" />
         <option value="$PROJECT_DIR$/Project/Scanner.cs" />
-        <option value="$PROJECT_DIR$/Project/Program.cs" />
         <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/IdentifierPE.cs" />
         <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/BracketsPE.cs" />
         <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/Identifier.cs" />
@@ -158,14 +245,17 @@
         <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/SequentialDeclaration.cs" />
         <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/In.cs" />
         <option value="$PROJECT_DIR$/Project/Compiler/Codes.cs" />
-        <option value="$PROJECT_DIR$/Project/Compiler/Scanner.cs" />
-        <option value="$PROJECT_DIR$/Project/Compiler/Compiler.cs" />
-        <option value="$PROJECT_DIR$/Project/Compiler/Parser.cs" />
         <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Command.cs" />
+        <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Expression.cs" />
         <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/AST.cs" />
-        <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/IfCommand.cs" />
+        <option value="$PROJECT_DIR$/Project/Program.cs" />
         <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/AssignCommand.cs" />
+        <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/DeclarationCommand.cs" />
         <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/LetCommand.cs" />
+        <option value="$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/IfCommand.cs" />
+        <option value="$PROJECT_DIR$/Project/Compiler/Compiler.cs" />
+        <option value="$PROJECT_DIR$/Project/Compiler/Scanner.cs" />
+        <option value="$PROJECT_DIR$/Project/Compiler/Parser.cs" />
       </list>
     </option>
   </component>
@@ -192,6 +282,18 @@
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Project" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Project" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Project" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Project" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="References" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Project" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Project" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Properties" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
@@ -232,9 +334,10 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/app-1.6.6/resources/app/git/cmd/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -283,11 +386,15 @@
       <workItem from="1557836487419" duration="4296000" />
       <workItem from="1557917900877" duration="1891000" />
       <workItem from="1558094419198" duration="5696000" />
+      <workItem from="1558358298335" duration="6371000" />
+      <workItem from="1558365042390" duration="22000" />
+      <workItem from="1558365086925" duration="133000" />
+      <workItem from="1558365517080" duration="282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14883000" />
+    <option name="totallyTimeSpent" value="21691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,10 +406,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19894099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20735608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -350,105 +457,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A23620C-45EB-41F2-B48D-9612A57926F8/4b/aa60267e/String.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A23620C-45EB-41F2-B48D-9612A57926F8/f7/8eddd197/Char.cs" />
-    <entry file="file://$PROJECT_DIR$/Project/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/Compiler/Codes.cs" />
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/Declaration.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/Let.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/In.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/SequentialDeclaration.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Operator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <marker date="1558093278292" expanded="true" signature="18:128" ph="{...}" />
-            <marker date="1558093278292" expanded="true" signature="57:126" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/Compiler/Compiler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <marker date="1558150586599" expanded="true" signature="17:267" ph="{...}" />
-            <marker date="1558150586599" expanded="true" signature="54:265" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/Compiler/Scanner.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="43" column="39" lean-forward="true" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
-          <folding>
-            <marker date="1558150586646" expanded="true" signature="45:1822" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="82:1820" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="253:344" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="382:507" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="546:587" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="629:913" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="785:876" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="961:1468" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="993:1458" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="1508:1814" ph="{...}" />
-            <marker date="1558150586646" expanded="true" signature="1588:1804" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/Compiler/Parser.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-615">
-          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <marker date="1558150586693" expanded="false" signature="6:73" ph="..." />
-            <marker date="1558150586693" expanded="true" signature="93:2419" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="129:2417" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="295:488" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="575:777" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="817:988" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="1022:1063" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="1110:1338" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="1389:2067" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="1536:2033" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="2114:2243" ph="{...}" />
-            <marker date="1558150586693" expanded="true" signature="2286:2411" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/Declaration.cs" />
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/Let.cs" />
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/In.cs" />
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Commands/SequentialDeclaration.cs" />
     <entry file="file://$PROJECT_DIR$/Project/Compiler/Token.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -466,31 +479,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/IdentifierPE.cs">
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Command.cs" />
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/BracketsPE.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="114">
           <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding>
-            <marker date="1558093278219" expanded="true" signature="18:184" ph="{...}" />
-            <marker date="1558093278219" expanded="true" signature="70:182" ph="{...}" />
-            <marker date="1558093278219" expanded="true" signature="141:176" ph="{...}" />
+            <marker date="1558358279682" expanded="true" signature="18:184" ph="{...}" />
+            <marker date="1558358279682" expanded="true" signature="68:182" ph="{...}" />
+            <marker date="1558358279682" expanded="true" signature="141:176" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Command.cs">
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/IdentifierPE.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state>
+          <folding>
+            <marker date="1558358279690" expanded="true" signature="18:184" ph="{...}" />
+            <marker date="1558358279690" expanded="true" signature="70:182" ph="{...}" />
+            <marker date="1558358279690" expanded="true" signature="141:176" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Operator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <marker date="1558358279692" expanded="true" signature="18:128" ph="{...}" />
+            <marker date="1558358279692" expanded="true" signature="57:126" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/AST.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="76">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding>
-            <marker date="1558184253690" expanded="true" signature="18:126" ph="{...}" />
+            <marker date="1558360691455" expanded="true" signature="18:125" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1558360736779" expanded="false" signature="6:47" ph="..." />
+            <marker date="1558360736779" expanded="true" signature="67:1052" ph="{...}" />
+            <marker date="1558360736779" expanded="true" signature="96:1050" ph="{...}" />
+            <marker date="1558360736779" expanded="true" signature="145:485" ph="{...}" />
+            <marker date="1558360736779" expanded="true" signature="147:389" ph="/* Console.WriteLine(&quot;Textfile(T) or console(C)?&quot;); ... */" />
+            <marker date="1558360736779" expanded="true" signature="545:581" ph="{...}" />
+            <marker date="1558360736779" expanded="true" signature="632:724" ph="{...}" />
+            <marker date="1558360736779" expanded="true" signature="783:1044" ph="{...}" />
+            <marker date="1558360736779" expanded="true" signature="888:1034" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Compiler/Compiler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <marker date="1558364857857" expanded="true" signature="52:1537" ph="{...}" />
+            <marker date="1558364857857" expanded="true" signature="89:1535" ph="{...}" />
+            <marker date="1558364857857" expanded="true" signature="843:1303" ph="{...}" />
+            <marker date="1558364857857" expanded="true" signature="1357:1417" ph="{...}" />
+            <marker date="1558364857857" expanded="true" signature="1470:1529" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/AssignCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <marker date="1558364672351" expanded="true" signature="103:640" ph="{...}" />
+            <marker date="1558364672351" expanded="true" signature="259:354" ph="{...}" />
+            <marker date="1558364672351" expanded="true" signature="408:461" ph="{...}" />
+            <marker date="1558364672351" expanded="true" signature="553:634" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -500,78 +574,134 @@
         <state>
           <caret column="19" selection-start-column="19" selection-end-column="19" />
           <folding>
-            <marker date="1558093278293" expanded="true" signature="18:186" ph="{...}" />
-            <marker date="1558093278293" expanded="true" signature="52:184" ph="{...}" />
-            <marker date="1558093278293" expanded="true" signature="129:178" ph="{...}" />
+            <marker date="1558358279693" expanded="true" signature="52:184" ph="{...}" />
+            <marker date="1558358279693" expanded="true" signature="129:178" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/Terminals/Identifier.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state>
           <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
           <folding>
-            <marker date="1558093278290" expanded="true" signature="18:132" ph="{...}" />
-            <marker date="1558093278290" expanded="true" signature="59:130" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/IfCommand.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <marker date="1558184253628" expanded="true" signature="59:225" ph="{...}" />
-            <marker date="1558184253628" expanded="true" signature="98:223" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/AssignCommand.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <marker date="1558184311694" expanded="true" signature="59:192" ph="{...}" />
-            <marker date="1558184311694" expanded="true" signature="103:190" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/LetCommand.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <marker date="1558184761943" expanded="true" signature="6:87" ph="..." />
-            <marker date="1558184761943" expanded="true" signature="119:292" ph="{...}" />
-            <marker date="1558184761943" expanded="true" signature="160:290" ph="{...}" />
+            <marker date="1558358279688" expanded="true" signature="59:130" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/Expression.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="83" selection-start-line="6" selection-start-column="83" selection-end-line="6" selection-end-column="83" />
+        <state relative-caret-position="57">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding>
-            <marker date="1558093278084" expanded="true" signature="18:335" ph="{...}" />
-            <marker date="1558093278084" expanded="true" signature="54:333" ph="{...}" />
-            <marker date="1558093278084" expanded="true" signature="240:327" ph="{...}" />
+            <marker date="1558359053617" expanded="true" signature="58:337" ph="{...}" />
+            <marker date="1558359053617" expanded="true" signature="244:331" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/BracketsPE.cs">
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/LetCommand.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="285">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
-            <marker date="1558093278082" expanded="true" signature="18:184" ph="{...}" />
-            <marker date="1558093278082" expanded="true" signature="68:182" ph="{...}" />
-            <marker date="1558093278082" expanded="true" signature="141:176" ph="{...}" />
+            <marker date="1558361946084" expanded="false" signature="6:134" ph="..." />
+            <marker date="1558361946084" expanded="true" signature="207:772" ph="{...}" />
+            <marker date="1558361946084" expanded="true" signature="363:507" ph="{...}" />
+            <marker date="1558361946084" expanded="true" signature="583:657" ph="{...}" />
+            <marker date="1558361946084" expanded="true" signature="707:766" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Project.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/DeclarationCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <marker date="1558361796329" expanded="true" signature="50:548" ph="{...}" />
+            <marker date="1558361796329" expanded="true" signature="98:546" ph="{...}" />
+            <marker date="1558361796329" expanded="true" signature="239:322" ph="{...}" />
+            <marker date="1558361796329" expanded="true" signature="381:434" ph="{...}" />
+            <marker date="1558361796329" expanded="true" signature="471:540" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/AbstractSyntaxTree/NonTerminals/IfCommand.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <marker date="1558362680995" expanded="true" signature="59:921" ph="{...}" />
+            <marker date="1558362680995" expanded="true" signature="98:919" ph="{...}" />
+            <marker date="1558362680995" expanded="true" signature="267:320" ph="{...}" />
+            <marker date="1558362680995" expanded="true" signature="412:553" ph="{...}" />
+            <marker date="1558362680995" expanded="true" signature="592:673" ph="{...}" />
+            <marker date="1558362680995" expanded="true" signature="710:793" ph="{...}" />
+            <marker date="1558362680995" expanded="true" signature="830:913" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Compiler/Scanner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <marker date="1558364942238" expanded="true" signature="45:1985" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="82:1983" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="253:344" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="382:507" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="546:587" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="629:913" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="785:876" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="961:1631" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="993:1621" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="1671:1977" ph="{...}" />
+            <marker date="1558364942238" expanded="true" signature="1751:1967" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Compiler/Parser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="161" column="45" lean-forward="true" selection-start-line="161" selection-start-column="45" selection-end-line="161" selection-end-column="45" />
+          <folding>
+            <marker date="1558365798746" expanded="false" signature="6:148" ph="..." />
+            <marker date="1558365798746" expanded="true" signature="168:6118" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="204:6116" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="379:600" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="688:1284" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="805:1247" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="946:1026" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="1115:1187" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="1340:2232" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="1390:2128" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="1622:1751" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="1844:2016" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="2273:2882" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="2334:2847" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="2424:2801" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="2920:3607" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="3111:3547" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="3329:3533" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="3653:4066" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="3835:4030" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="4132:4334" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="4374:4545" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="4555:4682" ph="/* Sets CurrentToken to next token or null if last token is complete. ... */" />
+            <marker date="1558365798746" expanded="true" signature="4715:4756" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="4803:5032" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="5083:5764" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="5230:5730" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="5811:5941" ph="{...}" />
+            <marker date="1558365798746" expanded="true" signature="5984:6110" ph="{...}" />
           </folding>
         </state>
       </provider>
