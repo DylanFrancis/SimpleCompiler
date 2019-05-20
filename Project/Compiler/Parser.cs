@@ -3,11 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 namespace Project {
-    public class Parser {
-        private const int Identifier = 1;
-        private const int Operator = 2;
-        private const int LPar = 3;
-        private const int RPar = 4;
+    public class Parser : Compiler{
+        
         private Token CurrentToken;
         private int CurTokenPos;
         private readonly ArrayList TokenList;

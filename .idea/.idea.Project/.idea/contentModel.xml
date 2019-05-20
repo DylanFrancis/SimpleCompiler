@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\s215008243\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\s215008243\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Project.-1400290622.00" t="ExcludeRecursive" />
-    <e p="C:\Users\s215008243\Documents\GitHub\Project" t="IncludeFlat">
+    <e p="C:\Users\Dylan\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Dylan\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Project.-1055515866.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Dylan\Documents\GitHub\Project" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Project" t="IncludeRecursive">
         <e p="AbstractSyntaxTree" t="Include">
           <e p="AST.cs" t="Include" />
-          <e p="Commands" t="Include">
-            <e p="Declaration.cs" t="Include" />
-            <e p="In.cs" t="Include" />
-            <e p="Let.cs" t="Include" />
-            <e p="SequentialDeclaration.cs" t="Include" />
-          </e>
-          <e p="Expressions" t="Include">
+          <e p="Expressions" t="Include" />
+          <e p="NonTerminals" t="Include">
+            <e p="AssignCommand.cs" t="Include" />
             <e p="BracketsPE.cs" t="Include" />
             <e p="Expression.cs" t="Include" />
-            <e p="IdentifierPE.cs" t="Include" />
+            <e p="IfCommand.cs" t="Include" />
+            <e p="LetCommand.cs" t="Include" />
           </e>
           <e p="Terminals" t="Include">
             <e p="Identifier.cs" t="Include" />
+            <e p="IdentifierPE.cs" t="Include" />
             <e p="Operator.cs" t="Include" />
             <e p="Terminal.cs" t="Include" />
           </e>
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Compiler" t="Include">
+          <e p="Compiler.cs" t="Include" />
           <e p="Parser.cs" t="Include" />
           <e p="Scanner.cs" t="Include" />
           <e p="Token.cs" t="Include" />

@@ -1,12 +1,7 @@
 using System.Collections;
 
 namespace Project {
-    public class Scanner {
-        private const int Identifier = 1;
-        private const int Operator = 2;
-        private const int LPar = 3;
-        private const int RPar = 4;
-        private const int Let = 5;
+    public class Scanner : Compiler{
         private int curPos;
         private readonly string Sentence;
 
@@ -47,7 +42,7 @@ namespace Project {
                 case "*":
                 case "/": return Operator;
                 case "Let": return Let;
-                case "var":
+                case "var": 
                 case ":":
                 case "in":
                 case "if":
