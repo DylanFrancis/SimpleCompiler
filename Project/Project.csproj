@@ -45,16 +45,19 @@
     <Compile Include="AbstractSyntaxTree\NonTerminals\Expression.cs" />
     <Compile Include="AbstractSyntaxTree\NonTerminals\IfCommand.cs" />
     <Compile Include="AbstractSyntaxTree\NonTerminals\LetCommand.cs" />
+    <Compile Include="AbstractSyntaxTree\Terminals\Condition.cs" />
+    <Compile Include="AbstractSyntaxTree\Terminals\ConditionPE.cs" />
     <Compile Include="AbstractSyntaxTree\Terminals\Identifier.cs" />
     <Compile Include="AbstractSyntaxTree\Terminals\IdentifierPE.cs" />
     <Compile Include="AbstractSyntaxTree\Terminals\Operator.cs" />
     <Compile Include="AbstractSyntaxTree\Terminals\Terminal.cs" />
     <Compile Include="Compiler\Compiler.cs" />
+    <Compile Include="Compiler\Contextualiser.cs" />
     <Compile Include="Compiler\Parser.cs" />
     <Compile Include="Compiler\Scanner.cs" />
     <Compile Include="Compiler\Token.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

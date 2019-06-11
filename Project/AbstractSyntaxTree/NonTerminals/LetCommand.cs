@@ -21,5 +21,9 @@ namespace Project.NonTerminals
         public void addCommand(Command command) {
             sequentialCommand.AddLast(command);
         }
+
+        public LinkedList<DeclarationCommand> SequentialDeclaration => sequentialDeclaration;
+
+        public LinkedList<Command> SequentialCommand => sequentialCommand;
     }
 }

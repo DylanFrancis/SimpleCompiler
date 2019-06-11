@@ -1,0 +1,14 @@
+Let
+var n : int
+var b : string
+in
+if b == true 
+then
+Let
+var i : int
+in 
+n = i
+end
+else 
+b = false
+end

@@ -17,6 +17,8 @@
             <e p="LetCommand.cs" t="Include" />
           </e>
           <e p="Terminals" t="Include">
+            <e p="Condition.cs" t="Include" />
+            <e p="ConditionPE.cs" t="Include" />
             <e p="Identifier.cs" t="Include" />
             <e p="IdentifierPE.cs" t="Include" />
             <e p="Operator.cs" t="Include" />
@@ -26,15 +28,18 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Compiler" t="Include">
           <e p="Compiler.cs" t="Include" />
+          <e p="Contextualiser.cs" t="Include" />
           <e p="Parser.cs" t="Include" />
           <e p="Scanner.cs" t="Include" />
           <e p="Token.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
-        <e p="Program.cs" t="Include" />
         <e p="Project.csproj" t="IncludeRecursive" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Test" t="Include">
+          <e p="Program.cs" t="Include" />
         </e>
       </e>
       <e p="Project.sln" t="IncludeFlat" />

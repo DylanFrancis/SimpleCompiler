@@ -5,5 +5,7 @@ namespace Project {
         public Terminal(string Spelling) {
             this.Spelling = Spelling;
         }
+
+        public string Name => Spelling;
     }
 }

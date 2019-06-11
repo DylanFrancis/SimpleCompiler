@@ -16,5 +16,9 @@ namespace Project.AbstractSyntaxTree.NonTerminals {
             get => type;
             set => type = value;
         }
+
+        public string getName() {
+            return identifier.Name;
+        }
     }
 }

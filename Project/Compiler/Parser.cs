@@ -10,57 +10,87 @@ namespace Project {
         private Token CurrentToken;
         private int CurTokenPos;
         private readonly ArrayList TokenList;
+        private LetCommand root;
+        private LetCommand curRoot;
 
-        public Parser(string Sentence) : base() {
-            
-            var S = new Scanner(Sentence);
-
-            TokenList = S.getTokens();
-            CurTokenPos = -1;
-            FetchNextToken();
-            
+        public Parser(string Sentence) : base() {            
+            Scanner scan = new Scanner(Sentence);
+            TokenList = scan.getTokens();
+            parse();
 //            var P = parseExpression();
+        }
+
+        public Parser(LinkedList<string> code) : base() {
+            Scanner scan;
+            String tokens = "";
+            foreach (string s in code) {
+                tokens += s;
+                tokens += " ";
+            }
+            tokens = tokens.Trim();
+            scan = new Scanner(tokens);
+            TokenList = scan.getTokens();                
+            parse();
+        }
+
+        private void parse() {
+            CurTokenPos = -1;
+            FetchNextToken(); 
+            parseLet();
         }
 
         public Parser(List<string> lines) { }
 
+        public LetCommand getRoot() {
+            return root;
+        }
 
         private LetCommand parseLet() {
-            if (CurrentToken == null)
-                return null;
-            if (CurrentToken.getType() == _let) {
-                LetCommand root = new LetCommand();
-                acceptIt();
-                while (CurrentToken.getSpelling() != "in") {
-                    root.addDeclaration(parseDeclaration());
-                }
-                acceptIt();
-                while (CurrentToken.getSpelling() != "end") {
-                    root.addCommand(parseCommand());
-                }
+            if (CurrentToken != null && accept(_let)) {
+                curRoot = new LetCommand();
+                if (root == null) root = curRoot;
                 
-                return root;
+               
+                while (CurrentToken.getType() != _in) {
+                    // accept(_in);
+                    curRoot.addDeclaration(parseDeclaration());
+                }
+
+                accept(_in);
+                while (CurrentToken.getType() != _end) {
+                    curRoot.addCommand(parseCommand());
+                }
+
+                accept(_end);
+                return curRoot;
             }
-
-            return null;
-
+            else {
+                Console.WriteLine("Syntax error: Let required.");
+                return null;
+            }
         }
 
         private DeclarationCommand parseDeclaration() {
-            if (CurrentToken.getType() == _var) {
+            if (accept(_var)) {
+                
                 DeclarationCommand declarationCommand = new DeclarationCommand(new Identifier(CurrentToken.getSpelling()));
-                acceptIt();
-                if (CurrentToken == null || CurrentToken.getType() != _colon) {
+                accept(_identifier); // 
+                
+                if (!accept(_colon)) {
                     Console.WriteLine("Syntax Error: variable declaration");
+                    Console.WriteLine("    Given: " + CurrentToken.getSpelling() + "\"");
+                    Console.WriteLine("    Expected: " + ":" + "\"");
                     return null;
                 }
-                acceptIt();
+                
                 if (variableExists(CurrentToken.getSpelling())) {
                     declarationCommand.Type = CurrentToken.getSpelling();
-                    acceptIt();
+                    nextToken();
                     return declarationCommand;
                 }
-                Console.WriteLine("Syntax Error: unknown variable");
+                             
+                Console.WriteLine("Syntax Error: unknown variable: " + CurrentToken.getSpelling());
+                nextToken();
                 return null;
             }
             Console.WriteLine("Syntax Error: variable declaration");
@@ -68,14 +98,13 @@ namespace Project {
         }
 
         private Command parseCommand() {
-            if (commandExists(CurrentToken.getSpelling())) {
+//            if (commandExists(CurrentToken.getSpelling())) {
                 Command command = null;
                 switch (CurrentToken.getType()) {
                     case _let: 
                         command = parseLet();
                       break;
                     case _if:
-                        acceptIt();
                         command = parseIf();
                         break;
                     default:
@@ -83,45 +112,51 @@ namespace Project {
                         break;
                 }
                 return command;
-            }
-            return null;
+//            }
+//            return null;
         }
 
         private IfCommand parseIf() {
+            accept(_if);
             Expression expression = parseExpression();
+            
             IfCommand ifCommand = new IfCommand(expression);
-            acceptIt();
-            if (CurrentToken.getType() == _then) {
-                acceptIt();
+            //nextToken();
+            
+            if (accept(_then)) {
                 Command thenCommand = parseCommand();
-                acceptIt();
+                
+//                nextToken();
                 ifCommand.ThenCommand = thenCommand;
-                if (CurrentToken.getType() == _else) {
-                    acceptIt();
+                
+                if (accept(_else)) {
                     Command elseCommand = parseCommand();
                     ifCommand.ElseCommand = elseCommand;
                     return ifCommand;
                 }
             }
-           
-            
             return null;
         }
 
         private AssignCommand parseAssign() {
+            accept(_identifier);
             AssignCommand assignCommand = new AssignCommand(new Identifier(CurrentToken.getSpelling()));
-            acceptIt();
-            if (CurrentToken.getType() == _assign) {
-                acceptIt();
-                Expression expression = parseExpression();
-                assignCommand.Expression = expression;
-                return assignCommand;
+//            nextToken();
+            
+            if (accept(_assign)) {
+                if (Peek() == _operator) {
+                    assignCommand.Expression = parseExpression();
+                }
+                else {
+                    if (CurrentToken.getType() == _condition) assignCommand.Assign = parseCondition();
+                    else assignCommand.Assign = parseIdentifier();
+                }
+                return assignCommand;    
+                
             }
 
             return null;
-        }
-        
-        
+        }       
         
         private void FetchNextToken() {
             CurTokenPos++;
@@ -131,18 +166,22 @@ namespace Project {
                 CurrentToken = null;
         }
 
-        private void accept(int Type) {
-            if (CurrentToken.matchesType(Type))
-                FetchNextToken();
-            else
-                Console.WriteLine("Syntax Error in accept");
+        private int Peek() {
+            return ((Token)TokenList[CurTokenPos + 1]).getType();
         }
 
-        /**
-         * Sets CurrentToken to next token or null if last token is complete.
-         * Increments CurTokenPos
-         */
-        private void acceptIt() {
+        private Boolean accept(int Type) {
+            if (CurrentToken.matchesType(Type)){
+                FetchNextToken();
+                return true;
+            }
+            Console.WriteLine("Syntax Error: Type mismatch");
+            Console.WriteLine("    Given: \"" + CurrentToken.getType() +"\" - \"" + CurrentToken.getSpelling() + "\"");
+            Console.WriteLine("    Expected: \"" + Type +"\" - \"" + getName(Type) + "\"");
+            return false;
+        }
+        
+        private void nextToken() {
             FetchNextToken();
         }
 
@@ -165,17 +204,26 @@ namespace Project {
                     PE = new IdentifierPE(I);
                     break;
                 case _lPar:
-                    acceptIt();
+                    nextToken();
                     PE = new BracketsPE(parseExpression());
                     accept(_rPar);
+                    break;
+                case _condition:
+                    var C = parseCondition();
+                    PE = new ConditionPE(C);
                     break;
                 default:
                     Console.WriteLine("Syntax Error in Primary");
                     PE = null;
                     break;
             }
-
             return PE;
+        }
+
+        private Condition parseCondition() {
+            var C = new Condition(CurrentToken.getSpelling());
+            accept(_condition);
+            return C;
         }
 
         private Identifier parseIdentifier() {
@@ -185,9 +233,9 @@ namespace Project {
         }
 
         private Operator parseOperator() {
-            var O = new Operator(CurrentToken.getSpelling());
+            var op = new Operator(CurrentToken.getSpelling());
             accept(_operator);
-            return O;
+            return op;
         }
     }
 }

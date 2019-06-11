@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Diagnostics;
 
 namespace Project {
     public class Scanner : Compiler{
@@ -8,6 +9,9 @@ namespace Project {
         private readonly ArrayList TokenList = new ArrayList();
 
         public Scanner(string S) {
+//            Debug.WriteLine(S);
+//            Debug.WriteLine(S.Length);
+            
             Sentence = S;
             BuildTokenList();
             curPos = 0;
@@ -23,6 +27,7 @@ namespace Project {
         }
 
         private string BuildNextToken() {
+//            Debug.WriteLine(curPos);
             var Token = "";
             while (Sentence[curPos] == ' ') curPos++;
             while (curPos < Sentence.Length && Sentence[curPos] != ' ') {
@@ -37,6 +42,8 @@ namespace Project {
             switch (Spelling) {
                 case "(":     return _lPar;
                 case ")":     return _rPar;
+                case "==":    
+                case "!=":
                 case "+":
                 case "-":
                 case "*":
@@ -48,7 +55,10 @@ namespace Project {
                 case "in":    return _in;
                 case "then":  return _then;
                 case "else":  return _else;
-                case ":=":    return _assign;
+                case "=":     return _assign;
+                case "true":  
+                case "false": return _condition;
+                case "end":   return _end;
                 default:      return _identifier;
             }
         }
