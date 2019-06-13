@@ -5,19 +5,9 @@ using System.Diagnostics;
 
 namespace Project {
     public class Scanner : Compiler{
-//        private int curPos;
-//        private readonly string Sentence;
-
         private readonly ArrayList TokenList = new ArrayList();
         private readonly LinkedList<Line> SentenceList;
         
-//        private readonly LinkedList<Token> TokenList = new LinkedList<Token>();
-        
-//        public Scanner(string S) {
-//            Sentence = S;
-//            BuildTokenList();
-//            curPos = 0;
-//        }
         public Scanner(LinkedList<Line> list) {
             SentenceList = list;
             BuildTokenList();
@@ -25,10 +15,6 @@ namespace Project {
         
 
         public void DisplayTokens() {
-//            LinkedList<Token>.Enumerator enumerator = TokenList.GetEnumerator();
-//            while (enumerator.MoveNext()){
-//                enumerator.Current.showSpelling();
-//            }
             for (var x = 0; x <= TokenList.Count - 1; x++)
                 ((Token) TokenList[x]).showSpelling();
         }
@@ -73,18 +59,6 @@ namespace Project {
             Token = Token.Trim();
             return Token;
         }
-
-//        private string BuildNextToken() {
-//            var Token = "";
-//            while (Sentence[curPos] == ' ') curPos++;
-//            while (curPos < Sentence.Length && Sentence[curPos] != ' ') {
-//                Token = Token + Sentence[curPos];
-//                curPos++;
-//            }
-//
-//            Token = Token.Trim();
-//            return Token;
-//        }
 
         private int FindType(string Spelling) {
             switch (Spelling) {

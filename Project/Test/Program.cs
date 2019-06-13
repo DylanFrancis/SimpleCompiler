@@ -15,8 +15,6 @@ namespace Project {
                     while (true) {
                         compile(fileInput());   
                     }
-//                case "C": compile(consoleInput());
-//                    break;
             }
         }
 
@@ -43,16 +41,6 @@ namespace Project {
                 code.AddLast(new Line(line, count));
             }
             return code;
-        }
-
-        private LinkedList<string> consoleInput() {
-            var input = "";
-            var code = new LinkedList<string>();
-            while (true) {
-                input = Console.ReadLine();
-                if (input == "-1") return code;
-                code.AddLast(input);
-            }
         }
     }
 }

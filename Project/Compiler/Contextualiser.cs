@@ -249,13 +249,6 @@ namespace Project {
             declaList.AddLast(declarationCommands);
         }
 
-//        private void AddScope(LinkedList<DeclarationCommand> declarationCommands) {
-//            foreach (DeclarationCommand declarationCommand in declarationCommands) {
-//                if(!table.ContainsKey(declarationCommand.getName()))
-//                    table.Add(declarationCommand.getName(), declarationCommand.Type);
-//            }
-//        }
-
         private void RemoveScope(LinkedList<DeclarationCommand> declarationCommands) {
             foreach (DeclarationCommand declarationCommand in declarationCommands) {
                 table.Remove(declarationCommand.getName());
@@ -268,18 +261,5 @@ namespace Project {
                 }
             }
         }
-        
-        /**
-         * Rebuilds variable set when a Let is removed
-         */
-//        private void rebuildVariables() {
-//            table.Clear();
-//            foreach (LinkedList<DeclarationCommand> declarationCommands in declaStack) {
-//                foreach (DeclarationCommand declaration in declarationCommands) {
-//                    if(!table.ContainsKey(declaration.getName()))
-//                        table.Add(declaration.getName(), declaration.Type);
-//                }
-//            }   
-//        }
     }
 }

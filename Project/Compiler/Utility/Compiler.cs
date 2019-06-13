@@ -17,7 +17,6 @@ namespace Project
         protected const int _then = 11;
         protected const int _else = 12;
         protected const int _end = 13;
-//        protected const int _assign = 14;
         protected const int _condition = 14;
         protected const int _conditionOp = 15;
         protected const int _literalString = 16;
@@ -40,18 +39,6 @@ namespace Project
         protected bool commandExists(string check) {
             return _compilerUtils.Commands.ContainsKey(check);
         }
-        
-        
-//        private string getConditionType(Condition c) {
-//            switch (c.Name) {
-//                case "<":        
-//                case ">":    
-//                case ">=":    
-//                case "<=":
-//                case "==":    
-//                case "!=":    return _conditionOp;
-//            }
-//        }
 
         protected void logError(Token token, string msg) {
             Console.WriteLine("Error at line: " + token.Line);

@@ -98,8 +98,6 @@ namespace Project {
                         break;
                 }
                 return command;
-//            }
-//            return null;
         }
 
         private IfCommand parseIf() {
