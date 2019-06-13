@@ -13,27 +13,7 @@ namespace Project {
         private int prevLine = -1;
         private readonly ArrayList TokenList;
         private LetCommand root;
-//        private LetCommand curRoot;
 
-//        public Parser(string Sentence) : base() {            
-//            Scanner scan = new Scanner(Sentence);
-//            TokenList = scan.getTokens();
-//            parse();
-////            var P = parseExpression();
-//        }
-
-//        public Parser(LinkedList<Line> code) : base() {
-//            Scanner scan;
-//            String tokens = "";
-//            foreach (Line l in code) {
-//                tokens += l.Code;
-//                tokens += " ";
-//            }
-//            tokens = tokens.Trim();
-//            scan = new Scanner(tokens);
-//            TokenList = scan.getTokens();                
-//            parse();
-//        }
         public Parser(LinkedList<Line> code) {
             _compilerUtils = CompilerUtils.getInstance();
             Scanner scan = new Scanner(code);
@@ -41,10 +21,11 @@ namespace Project {
             parse();
         }
 
-        private void parse() {
+        public int parse() {
             CurTokenPos = -1;
             FetchNextToken(); 
             parseLet();
+            return errorCount;
         }
 
         public Parser(List<string> lines) { }

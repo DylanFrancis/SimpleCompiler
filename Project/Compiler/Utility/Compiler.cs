@@ -27,6 +27,7 @@ namespace Project
         protected const int _integer = 52;
         protected const int _boolean = 53;
         protected static CompilerUtils _compilerUtils;
+        protected int errorCount;
 
         protected string getName(int type) {
             return _compilerUtils.Syntax[type];
@@ -56,6 +57,7 @@ namespace Project
             Console.WriteLine("Error at line: " + token.Line);
             Console.WriteLine("    " + msg);
             Console.WriteLine();
+            errorCount++;
         }
 
         protected void logError(Token token, string[] msg) {
@@ -64,6 +66,7 @@ namespace Project
                 Console.WriteLine("    " + s);
             }
             Console.WriteLine();
+            errorCount++;
         }
 
         protected void logCError(AST ast, string[] msg) {
@@ -72,11 +75,13 @@ namespace Project
                 Console.WriteLine("    " + s);
             }
             Console.WriteLine();
+            errorCount++;
         }
         protected void logCError(AST ast, string msg) {
             Console.WriteLine("Contextual Error at line: " + ast.Line);
             Console.WriteLine("    " + msg);
             Console.WriteLine();
+            errorCount++;
         }
     }
 }

@@ -9,7 +9,6 @@ namespace Project {
         private LetCommand root;
         private LinkedList<LinkedList<DeclarationCommand>> declaList;
         private Dictionary<string, string> table;
-//        private string curType;
         
         public Contextualiser(LetCommand root) {
             _compilerUtils = CompilerUtils.getInstance();

@@ -3,6 +3,7 @@ Let
 	var b : string
 	var e : boolean
 in
+	n = 9
 	if b != true 
 	then
 		Let

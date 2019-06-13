@@ -11,8 +11,10 @@ namespace Project {
 
         private void start(string input) {
             switch (input) {
-                case "F": compile(fileInput());
-                    break;
+                case "F":
+                    while (true) {
+                        compile(fileInput());   
+                    }
 //                case "C": compile(consoleInput());
 //                    break;
             }
@@ -20,9 +22,15 @@ namespace Project {
 
         private void compile(LinkedList<Line> code) {
             Parser parser = new Parser(code);
-            Contextualiser analyser = new Contextualiser(parser.getRoot());
-            analyser.analyse();
-            Console.WriteLine("Complete.");
+            int pError = parser.parse();
+            Console.WriteLine("Syntax analysis complete.");
+            Console.WriteLine();
+            if (pError == 0) {
+                Contextualiser analyser = new Contextualiser(parser.getRoot());
+                analyser.analyse();
+                Console.WriteLine("Contextual analysis complete.");
+            }
+            Console.WriteLine("================================================");
             Console.ReadLine();
         }
 

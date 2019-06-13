@@ -37,10 +37,6 @@ namespace Project {
             syntax.Add(_conditionOp, "condition operator");
             syntax.Add(_literalString, "literal string");
             syntax.Add(_literalInt, "literal int");
-//            commands.Add("in", _in);
-//            commands.Add("then", _then);
-//            commands.Add("else", _else);
-//            commands.Add("=", _assign);
         }
 
         public Dictionary<string, int> Types => types;
