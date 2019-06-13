@@ -7,36 +7,32 @@ namespace Project {
         public static void Main(string[] args) {
             Program _program = new Program();
             _program.start(args[0]);
-//            Console.WriteLine("Textfile(T) or console(C)?");
-//            LinkedList<string> lines;
-//            var op = Console.ReadLine();
-//            if (op == "T") lines = textfileInput();
-//            else lines = consoleInput();
-
-
-//            Parser P = new Parser("a - ( b * c )");
-//            Console.ReadLine();
         }
 
         private void start(string input) {
             switch (input) {
                 case "F": compile(fileInput());
                     break;
-                case "C": compile(consoleInput());
-                    break;
+//                case "C": compile(consoleInput());
+//                    break;
             }
         }
 
-        private void compile(LinkedList<string> code) {
-            Parser p = new Parser(code);
+        private void compile(LinkedList<Line> code) {
+            Parser parser = new Parser(code);
+            Contextualiser analyser = new Contextualiser(parser.getRoot());
+            analyser.analyse();
+            Console.WriteLine("Complete.");
             Console.ReadLine();
         }
 
-        private LinkedList<string> fileInput() {
-            LinkedList<string> code = new LinkedList<string>();
+        private LinkedList<Line> fileInput() {
+            LinkedList<Line> code = new LinkedList<Line>();
             var lines = File.ReadLines("code.txt");
+            int count = 0;
             foreach (string line in lines) {
-                code.AddLast(line);
+                count++;
+                code.AddLast(new Line(line, count));
             }
             return code;
         }

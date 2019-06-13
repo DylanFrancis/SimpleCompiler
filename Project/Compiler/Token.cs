@@ -1,14 +1,19 @@
 using System;
+using System.Collections.Generic;
 
 namespace Project {
     public class Token {
         private readonly string Spelling;
         private readonly int Type; // 1 - Identifier, 2 Operator, 3 LPar, 4 RPar
+        private readonly int _line;
 
-        public Token(string S, int T) {
+        public Token(string S, int T, int L) {
             Spelling = S;
             Type = T;
+            _line = L;
         }
+
+        public int Line => _line;
 
         public string getSpelling() {
             return Spelling;

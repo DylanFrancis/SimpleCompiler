@@ -9,29 +9,40 @@
         <e p="AbstractSyntaxTree" t="Include">
           <e p="AST.cs" t="Include" />
           <e p="NonTerminals" t="Include">
-            <e p="AssignCommand.cs" t="Include" />
             <e p="BracketsPE.cs" t="Include" />
-            <e p="DeclarationCommand.cs" t="Include" />
+            <e p="Commands" t="Include">
+              <e p="AssignCommand.cs" t="Include" />
+              <e p="DeclarationCommand.cs" t="Include" />
+              <e p="IfCommand.cs" t="Include" />
+              <e p="LetCommand.cs" t="Include" />
+            </e>
+            <e p="ConditionExpression.cs" t="Include" />
             <e p="Expression.cs" t="Include" />
-            <e p="IfCommand.cs" t="Include" />
-            <e p="LetCommand.cs" t="Include" />
           </e>
           <e p="Terminals" t="Include">
             <e p="Condition.cs" t="Include" />
             <e p="ConditionPE.cs" t="Include" />
             <e p="Identifier.cs" t="Include" />
             <e p="IdentifierPE.cs" t="Include" />
+            <e p="Literal.cs" t="Include" />
+            <e p="LiteralInt.cs" t="Include" />
+            <e p="LiteralPE.cs" t="Include" />
+            <e p="LiteralString.cs" t="Include" />
             <e p="Operator.cs" t="Include" />
             <e p="Terminal.cs" t="Include" />
           </e>
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Compiler" t="Include">
-          <e p="Compiler.cs" t="Include" />
           <e p="Contextualiser.cs" t="Include" />
+          <e p="Line.cs" t="Include" />
           <e p="Parser.cs" t="Include" />
           <e p="Scanner.cs" t="Include" />
           <e p="Token.cs" t="Include" />
+          <e p="Utility" t="Include">
+            <e p="Compiler.cs" t="Include" />
+            <e p="CompilerUtils.cs" t="Include" />
+          </e>
         </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Project.csproj" t="IncludeRecursive" />

@@ -1,14 +1,31 @@
 Let
-var n : int
-var b : string
+	var n : int
+	var b : string
+	var e : boolean
 in
-if b == true 
-then
-Let
-var i : int
-in 
-n = i
-end
-else 
-b = false
+	if b != true 
+	then
+		Let
+			var b : int
+			var a : string
+			var c : int
+		in 
+			c = 0
+			b = 7
+			if c + ( b - t ) == n
+			then
+				Let
+					
+				in 
+					a = s
+					a = n
+				end
+			else
+				a = b
+			n = g + b
+		end
+	else 
+		e = true
+		e = b
+		b = false
 end

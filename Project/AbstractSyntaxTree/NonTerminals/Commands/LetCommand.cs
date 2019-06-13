@@ -9,7 +9,8 @@ namespace Project.NonTerminals
         private LinkedList<DeclarationCommand> sequentialDeclaration;
         private LinkedList<Command> sequentialCommand;
 
-        public LetCommand() {
+
+        public LetCommand(int line) : base(line) {
             sequentialDeclaration = new LinkedList<DeclarationCommand>();
             sequentialCommand = new LinkedList<Command>();
         }

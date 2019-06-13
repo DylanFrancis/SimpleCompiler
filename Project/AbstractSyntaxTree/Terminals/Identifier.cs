@@ -1,5 +1,6 @@
 namespace Project {
     public class Identifier : Terminal {
-        public Identifier(string Spelling) : base(Spelling) { }
+        public Identifier(int line, string spelling) : base(line, spelling) {
+        }
     }
 }

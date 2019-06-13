@@ -3,21 +3,16 @@ using Project.NonTerminals;
 namespace Project.NonTerminals
 {
     public class IfCommand : Command{
-        private Expression expression;
+        private ConditionExpression expression;
         private Command thenCommand;
         private Command elseCommand;
 
-        public IfCommand(Expression expression) {
+
+        public IfCommand(int line, ConditionExpression expression) : base(line) {
             this.expression = expression;
         }
 
-        public IfCommand(Expression expression, Command thenCommand, Command elseCommand) {
-            this.expression = expression;
-            this.thenCommand = thenCommand;
-            this.elseCommand = elseCommand;
-        }
-
-        public Expression Expression {
+        public ConditionExpression Expression {
             get => expression;
             set => expression = value;
         }

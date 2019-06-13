@@ -1,13 +1,32 @@
 namespace Project {
     public class Expression : Command {
-        public Operator O;
-        public PrimaryExpression P1;
-        public PrimaryExpression P2;
+        protected Operator O;
+        protected PrimaryExpression P1;
+        protected PrimaryExpression P2;
 
-        public Expression(PrimaryExpression P1, Operator O, PrimaryExpression P2) {
-            this.P1 = P1;
-            this.O = O;
-            this.P2 = P2;
+
+        public Expression(int line, PrimaryExpression p1, Operator o, PrimaryExpression p2) : base(line) {
+            O = o;
+            P1 = p1;
+            P2 = p2;
+        }
+
+        public Operator GetOperator() {
+            return O;
+        }
+
+        public void setOperator(Operator value) {
+            O = value;
+        }
+
+        public PrimaryExpression getP1 {
+            get => P1;
+            set => P1 = value;
+        }
+
+        public PrimaryExpression getP2 {
+            get => P2;
+            set => P2 = value;
         }
     }
 }

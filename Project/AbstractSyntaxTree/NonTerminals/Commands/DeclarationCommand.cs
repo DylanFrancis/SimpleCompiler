@@ -3,15 +3,11 @@ namespace Project.AbstractSyntaxTree.NonTerminals {
         private Identifier identifier;
         private string type;
 
-        public DeclarationCommand(Identifier identifier, string type) {
+
+        public DeclarationCommand(int line, Identifier identifier) : base(line) {
             this.identifier = identifier;
-            this.type = type;
         }
 
-        public DeclarationCommand(Identifier identifier) {
-            this.identifier = identifier;
-        }
-        
         public string Type {
             get => type;
             set => type = value;
